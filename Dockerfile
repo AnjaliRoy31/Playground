@@ -5,7 +5,7 @@ RUN apt-get update && apt-get -y upgrade
 WORKDIR /usr/local/tomcat
 
 # Copy to images tomcat path
-COPY ./target/Login-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/login.war
+COPY ./target/Login.war /usr/local/tomcat/webapps/login.war
 
 #COPY tomcat-users.xml /usr/local/tomcat/conf/tomcat-users.xml
 #COPY context.xml /usr/local/tomcat/webapps/manager/META-INF/context.xml
